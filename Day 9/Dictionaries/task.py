@@ -27,7 +27,6 @@ for key in programming_dictionary:
     print(programming_dictionary[key])
 
 
-
 # from the challenge my solution
 student_scores = {
     'Harry': 88,
