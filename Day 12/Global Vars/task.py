@@ -26,3 +26,12 @@ def increase_enemies(enemy):
 
 enemies = increase_enemies(enemies)
 print(f"enemies outside function: {enemies}")
+
+
+#Day prev task 4 This was depricated
+# Global Constants
+PI = 3.14159
+GOOGLE_URL = "https://www.google.com/"
+
+def global_const():
+    print(GOOGLE_URL)
