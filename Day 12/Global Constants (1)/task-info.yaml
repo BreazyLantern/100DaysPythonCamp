@@ -1,0 +1,15 @@
+type: theory
+custom_name: Global Constants
+files:
+  - name: task.py
+    visible: true
+    learner_created: false
+  - name: solution.py
+    visible: true
+    learner_created: false
+  - name: solution.py
+    visible: true
+    learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true
