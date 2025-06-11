@@ -10,6 +10,7 @@ nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 # Easy level
+#Sequencial symbol entry
 # password = ""
 # for letter in range(0, nr_letters):
 #     password += random.choice(letters)
@@ -24,6 +25,7 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 
 # Hard level
+# Fully Randomize password entry
 password_list = []
 for letter in range(0, nr_letters):
     password_list.append(random.choice(letters))
@@ -36,6 +38,7 @@ for letter in range(0, nr_numbers):
 
 print(password_list)
 
+# shuffling function makes this easier than it seems
 random.shuffle(password_list)
 print(password_list)
 
