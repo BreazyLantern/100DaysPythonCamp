@@ -16,7 +16,7 @@ shift = int(input("Type the shift number:\n"))
 def decrypt(original_text, shift_amount):
     decrypt_text = ""
     for letter in original_text:
-        shifted_pos = alphabet.index(letter) - 2
+        shifted_pos = alphabet.index(letter) - shift_amount
         shifted_pos %= len(alphabet)
         decrypt_text += alphabet[shifted_pos]
     print(f"Here is the decoded result: {decrypt_text}")
