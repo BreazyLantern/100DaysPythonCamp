@@ -35,3 +35,5 @@ GOOGLE_URL = "https://www.google.com/"
 
 def global_const():
     print(GOOGLE_URL)
+
+global_const()
