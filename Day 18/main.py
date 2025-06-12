@@ -39,6 +39,7 @@ directions = [0, 90, 180, 270]
 t.colormode(255)
 
 def random_color():
+    """Creates a random RGB color output"""
     r = randint(0, 255)
     g = randint(0, 255)
     b = randint(0, 255)
