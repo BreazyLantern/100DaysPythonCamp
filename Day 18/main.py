@@ -47,20 +47,24 @@ def random_color():
 
 timmy_the_turtle.speed("fastest")
 
-# timmy_the_turtle.pensize(10)
-# for _ in range(200):
-#     timmy_the_turtle.color(random_color())
-#     timmy_the_turtle.forward(30)
-#     timmy_the_turtle.setheading(choice(directions))
+def draw_random_movement(length_of_movement):
+    """Draws using the turtle in a random path with thick line in random colors"""
+    timmy_the_turtle.pensize(10)
+    for _ in range(length_of_movement):
+        timmy_the_turtle.color(random_color())
+        timmy_the_turtle.forward(30)
+        timmy_the_turtle.setheading(choice(directions))
+
 
 def draw_spirograph(size_of_gap):
+    """Draws using the turtle in a spirograph pattern using random colors"""
     for _ in range(int(360/ size_of_gap)):
         timmy_the_turtle.color(random_color())
         timmy_the_turtle.circle(100)
         timmy_the_turtle.setheading(timmy_the_turtle.heading() + size_of_gap)
 
 draw_spirograph(5)
-
+#draw_random_movement(200)
 
 
 """about tuples 

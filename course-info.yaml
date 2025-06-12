@@ -24,5 +24,52 @@ content:
   - Day 13
   - Day 14
   - Day 15
+additional_files:
+  - name: .idea/inspectionProfiles/Default.xml
+  - name: .idea/inspectionProfiles/profiles_settings.xml
+  - name: Day 1/task/task.py
+  - name: Day 1/task/solution.py
+  - name: Day 3/__init__.py
+  - name: Day 4/Rock Paper Scissors/task.py
+  - name: Day 4/Rock Paper Scissors/AsciiSymbols.py
+  - name: Day 7/task/main.py
+  - name: Day 7/task/__init__.py
+  - name: Day 7/task/solution.py
+  - name: Day 7/task/hangman_art.py
+  - name: Day 7/task/hangman_words.py
+  - name: Day 11/task/art.py
+  - name: Day 11/task/main.py
+  - name: Day 11/task/solution.py
+  - name: Day 16/Day 16 OOP.py
+  - name: Day 16/another_module.py
+  - name: Day 16/lesson about packages.py
+  - name: Day 16/oop-coffee-machine-start/main.py
+  - name: Day 16/oop-coffee-machine-start/menu.py
+  - name: Day 16/oop-coffee-machine-start/coffee_maker.py
+  - name: Day 16/oop-coffee-machine-start/money_machine.py
+  - name: Day 16/oop-coffee-machine-start/Coffee Machine Program Requirements.pdf
+    is_binary: true
+  - name: Day 16/oop-coffee-machine-start/Coffee+Machine+Classes+Documentation.pdf
+    is_binary: true
+  - name: Day 17/quiz/data.py
+  - name: Day 17/quiz/main.py
+  - name: Day 17/quiz/quiz_brain.py
+  - name: Day 17/quiz/question_model.py
+  - name: Day 17/Day 17 Main.py
+  - name: Day 18/main.py
+  - name: Day 18/Hurst_painting/Hirst.jpg
+    is_binary: true
+  - name: Day 18/Hurst_painting/Painting_Lesson.py
+  - name: Day 19/main.py
+  - name: Day 19/turtle_race.py
+  - name: Day 20/main.py
+  - name: Day 20/snake.py
+  - name: Day 21/food.py
+  - name: Day 21/main.py
+  - name: Day 21/test.py
+  - name: Day 21/snake.py
+  - name: Day 21/scoreboard.py
+  - name: README.md
 mode: Study
 feedback_link: https://plugins.jetbrains.com/plugin/25212-100-days-of-code--the-complete-python-pro-bootcamp/reviews
+yaml_version: 2
