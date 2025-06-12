@@ -22,7 +22,7 @@ player_health = 10 # Global variable
 
 def drink_potion():
     potion_strength = 2 # Local variable
-    print(player_health)
+    print(player_health) # can call global variable in function
 
 drink_potion()
 print(player_health)
