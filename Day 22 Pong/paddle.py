@@ -4,7 +4,7 @@ from turtle import Turtle
 MOVE_DISTANCE = 20
 
 class Paddle(Turtle):
-
+    """The Paddles used in the game of Pong"""
     def __init__(self, position):
         super().__init__()
         self.shape("square")
@@ -16,8 +16,10 @@ class Paddle(Turtle):
         self.goto(position)
 
     def up(self):
+        """control for making the paddle go up"""
         self.goto(self.xcor(), self.ycor() + MOVE_DISTANCE)
 
     def down(self):
+        """control for making the paddle go down"""
         self.goto(self.xcor(), self.ycor() - MOVE_DISTANCE)
 
