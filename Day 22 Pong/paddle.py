@@ -4,8 +4,6 @@ from turtle import Turtle
 XCOORD = 350
 STARTING_POSITIONS = (XCOORD, 0)
 MOVE_DISTANCE = 20
-UP = 90
-DOWN = 270
 
 class Paddle:
 
