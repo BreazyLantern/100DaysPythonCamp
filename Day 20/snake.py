@@ -15,6 +15,7 @@ class Snake:
 
 
     def create_snake(self):
+        """Create the first three turtles or the snake"""
         for position in STARTING_POSITIONS:
             new_segment = Turtle("square")
             new_segment.color("white")
@@ -31,6 +32,8 @@ class Snake:
             self.segments[seg_num].goto(new_x, new_y)
         self.head.forward(MOVE_DISTANCE)
 
+
+    """Movement keys"""
     def up(self):
         if self.head.heading() != DOWN:
             self.head.setheading(UP)
