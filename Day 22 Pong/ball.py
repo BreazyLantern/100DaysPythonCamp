@@ -1,8 +1,5 @@
 from turtle import Turtle
 
-#constants
-MOVE_DISTANCE = 20
-
 class Ball(Turtle):
     """The ball used in the Pong game, will move across the screen in certain directions"""
     def __init__(self):
@@ -29,7 +26,14 @@ class Ball(Turtle):
         self.goto(new_x, new_y)
 
     def bounce_y(self):
+        """invert the y move distance"""
         self.y_move *= -1
     
     def bounce_x(self):
+        """invert the x move distance"""
         self.x_move *= -1
+
+    def reset_position(self):
+        """reset the ball position and invert the movement direction"""
+        self.goto(0,0)
+        self.bounce_x()
