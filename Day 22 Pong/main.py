@@ -40,10 +40,11 @@ while game_is_on:
     #instructors method of bounce, for me i would have placed this within the ball function, but it makes sense to call the function to bounce here
     #since we also can see the screen width and height values on this file
     if ball.ycor() > 280 or ball.ycor() < -280:
-        ball.bounce()
+        ball.bounce_y()
 
-    #
-
+    #Detect collision with paddles
+    if ball.distance(r_paddle) < 50 and ball.xcor() > 320 or ball.distance(l_paddle) < 50 and ball.xcor() < -320:
+        ball.bounce_x()
 
 
 screen.exitonclick()
