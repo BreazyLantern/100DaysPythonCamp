@@ -15,7 +15,7 @@ screen.tracer(0)
 screen.title("Pong")
 
 #create paddle to control
-paddle = Paddle()
+r_paddle = Paddle(350)
 
 #listen for inputs
 screen.listen()
@@ -28,7 +28,7 @@ while game_is_on:
     time.sleep(0.1)
 
     #detect keypress to move paddle
-    screen.onkey(paddle.up, "Up")
-    screen.onkey(paddle.down, "Down")
+    screen.onkey(r_paddle.up, "Up")
+    screen.onkey(r_paddle.down, "Down")
 
 screen.exitonclick()
