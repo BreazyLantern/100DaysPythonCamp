@@ -16,6 +16,7 @@ screen.title("Pong")
 
 #create paddle to control
 r_paddle = Paddle((350, 0))
+l_paddle = Paddle((-350, 0))
 
 #listen for inputs
 screen.listen()
@@ -24,11 +25,12 @@ screen.listen()
 game_is_on = True
 while game_is_on:
     screen.update()
-    # Delay by seconds
-    time.sleep(0.1)
 
     #detect keypress to move paddle
     screen.onkey(r_paddle.up, "Up")
     screen.onkey(r_paddle.down, "Down")
+    screen.onkey(l_paddle.up, "w")
+    screen.onkey(l_paddle.down, "s")
+
 
 screen.exitonclick()
