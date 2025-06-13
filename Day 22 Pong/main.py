@@ -15,7 +15,7 @@ screen.tracer(0)
 screen.title("Pong")
 
 #create paddle to control
-r_paddle = Paddle(350)
+r_paddle = Paddle((350, 0))
 
 #listen for inputs
 screen.listen()
