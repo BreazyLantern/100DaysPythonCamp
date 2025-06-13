@@ -9,6 +9,7 @@ class Ball(Turtle):
         self.penup()
         self.y_move = 10
         self.x_move = 10
+        self.move_speed = .1
         #my initialized setup for the ball to go to the upper right
         #self.setheading(45)
 
@@ -32,8 +33,11 @@ class Ball(Turtle):
     def bounce_x(self):
         """invert the x move distance"""
         self.x_move *= -1
+        self.move_speed *=.9
+        print(self.move_speed)
 
     def reset_position(self):
         """reset the ball position and invert the movement direction"""
+        self.move_speed = .1
         self.goto(0,0)
         self.bounce_x()
