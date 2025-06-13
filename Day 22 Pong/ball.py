@@ -10,7 +10,8 @@ class Ball(Turtle):
         self.shape("circle")
         self.color("white")
         self.penup()
-        self.y_value = 10
+        self.y_move = 10
+        self.x_move = 10
         #my initialized setup for the ball to go to the upper right
         #self.setheading(45)
 
@@ -18,10 +19,14 @@ class Ball(Turtle):
         """move the ball"""
         #my method of forward movement of the ball
         #self.forward(MOVE_DISTANCE)
-        if self.ycor() > 280 or self.ycor() < -280:
-            self.y_value *= -1
-        new_x = self.xcor() + 10
-        new_y = self.ycor() + self.y_value
 
+        #my suggested method of bounce
+        # if self.ycor() > 280 or self.ycor() < -280:
+        #     self.y_move *= -1
+        new_x = self.xcor() + self.x_move
+        new_y = self.ycor() + self.y_move
 
         self.goto(new_x, new_y)
+
+    def bounce(self):
+        self.y_move *= -1
