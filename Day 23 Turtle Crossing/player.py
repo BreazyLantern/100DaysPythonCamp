@@ -7,7 +7,6 @@ FINISH_LINE_Y = 280
 
 
 class Player(Turtle):
-
     def __init__(self):
         super().__init__()
         self.shape("turtle")
@@ -17,9 +16,14 @@ class Player(Turtle):
 
 
     def restart_position(self):
-        self.setpos(0, -280)
+        self.setpos(STARTING_POSITION)
 
     def movement(self):
         self.forward(MOVE_DISTANCE)
+
+
+    def is_at_finish_line(self):
         if self.ycor() > FINISH_LINE_Y:
-            self.restart_position()
+            return True
+        else:
+            return False
