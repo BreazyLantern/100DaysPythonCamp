@@ -29,5 +29,10 @@ with open("new_file.txt", mode="w") as file:
     file.write("new file")
 
 #Find file outside relative working directory
+#absolute
 with open("/Users/Terry/Desktop/NestedFile.txt") as file:
+    print(file.read())
+
+#relative
+with open("../../../../Desktop/NestedFile.txt") as file:
     print(file.read())
