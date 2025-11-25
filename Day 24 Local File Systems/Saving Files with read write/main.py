@@ -27,3 +27,7 @@ with open("my_file.txt", mode= "a") as file:
 #create a new file
 with open("new_file.txt", mode="w") as file:
     file.write("new file")
+
+#Find file outside relative working directory
+with open("/Users/Terry/Desktop/NestedFile.txt") as file:
+    print(file.read())
